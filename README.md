@@ -1,4 +1,4 @@
-# Data-Mining-for-Cybersecurity-Project
+# Data-Mining-for-Cybersecurity-Project - CIC-IDS2017 Analysis
 
 230304005 Sıla Özgel  
 220304044 Miray Pınarbaşı  
