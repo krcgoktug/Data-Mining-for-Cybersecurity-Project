@@ -1,5 +1,3 @@
-<img width="946" height="669" alt="image" src="https://github.com/user-attachments/assets/5631b6b9-b2cc-44be-a268-3d9dbc048900" /># Data-Mining-for-Cybersecurity-Project - CIC-IDS2017 Analysis
-
 Due to GitHub’s 100 MB file size limit, the dataset is not uploaded directly.  
 Below is the official source of the exact CSV files used in our project:
 http://cicresearch.ca/CICDataset/CIC-IDS-2017/Dataset/CIC-IDS-2017/CSVs/MachineLearningCSV.zip
