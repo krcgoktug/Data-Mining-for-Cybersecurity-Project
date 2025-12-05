@@ -1,9 +1,12 @@
 # Data-Mining-for-Cybersecurity-Project - CIC-IDS2017 Analysis
 
 ## Dataset Access  
-Due to GitHub’s 100 MB file size limit, the dataset is not uploaded directly.  
-Below is the official source of the exact CSV files used in our project:
-http://cicresearch.ca/CICDataset/CIC-IDS-2017/Dataset/CIC-IDS-2017/CSVs/MachineLearningCSV.zip
+Due to GitHub’s 100 MB file size limit, the dataset files cannot be uploaded directly to this repository.
+
+All CSV files used in this project have been uploaded by the researcher to a Google Drive folder for external review.  
+The folder contains the complete MachineLearningCSV dataset (Monday–Friday traffic).
+
+🔗 Google Drive Dataset Folder: https://drive.google.com/drive/folders/1surGZrinYRapx0gBuWRC4NAR8MitYRna?usp=drive_link
 
   
 ## Group Members
