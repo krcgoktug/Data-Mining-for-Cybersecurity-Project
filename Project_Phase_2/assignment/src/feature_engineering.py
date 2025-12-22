@@ -56,7 +56,7 @@ def parse_args() -> argparse.Namespace:
         "--input",
         "-i",
         default="clean_cyber_data.csv",
-        help="Path to cleaned CSV (default: cleaned_data.csv).",
+        help="Path to cleaned CSV (default: clean_cyber_data.csv).",
     )
     parser.add_argument(
         "--output",
