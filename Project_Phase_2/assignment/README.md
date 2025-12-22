@@ -10,7 +10,7 @@ This script prepares cleaned CIC-IDS2017 data for a Random Forest model:
 ### Run
 From `Project_Phase_2/assignment`:
 ```bash
-python src/preprocessing/feature_engineering.py --input data/sample_data.csv --output processed_data.csv
+python src/feature_engineering.py --input data/sample_data.csv --output processed_data.csv
 ```
 
 Notes:
