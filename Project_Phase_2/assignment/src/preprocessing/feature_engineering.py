@@ -39,7 +39,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--input",
         "-i",
-        default="cleaned_data.csv",
+        default="clean_cyber_data.csv",
         help="Path to cleaned CSV (default: cleaned_data.csv).",
     )
     parser.add_argument(
