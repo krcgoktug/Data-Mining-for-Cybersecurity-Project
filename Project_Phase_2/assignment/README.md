@@ -55,7 +55,7 @@ python src/feature_engineering.py --input src/clean_cyber_data.csv --output proc
 * **`src/`**: Contains Python scripts for cleaning and engineering.
 * **`data/`**: Holds **sample dataset** subsets for input and verification.
 * **`report/`**: Contains the final PDF report with detailed project analysis.
-* **\`requirements.txt\`**: Listing of all Python dependencies.
+* **\`requirements.txt/\`**: Listing of all Python dependencies.
 
 ---
 
