@@ -26,7 +26,7 @@ Based on Information Gain analysis, this script refines the dataset for a Random
 * **Feature Engineered Data:** https://drive.google.com/file/d/1aiMiYLPZClOwJ13Yw9Hyh1hYHJ9yYado/view?usp=sharing
 
 
-#### Exploratory Data Analysis (\`notebooks/01_eda_overview.ipynb\`)
+#### Exploratory Data Analysis (`notebooks/01_eda_overview.ipynb`)
 Detailed investigation of the dataset's statistical properties:
 * **Class Distribution:** Visualizes the extreme imbalance between benign traffic ( > 80%) and various attack types, highlighting the need for specialized evaluation metrics.
 * **Feature Distribution:** Histogram analysis for the 9 selected cybersecurity features to understand their statistical range and spread.
@@ -63,7 +63,7 @@ python src/feature_engineering.py --input src/clean_cyber_data.csv --output proc
 
 ###  Repository Structure
 * **`src/`**: Contains Python scripts for cleaning and engineering.
-* **\`notebooks/\`**: Contains the **\`01_eda_overview.ipynb\`** notebook.
+* **`notebooks/`**: Contains the **\`01_eda_overview.ipynb\`** notebook.
 * **`data/`**: Holds **sample dataset** subsets for input and verification.
 * **`report/`**: Contains the final PDF report and static EDA outputs (\`html\`, \`txt\`).
 * **\`requirements.txt\`**: Listing of all Python dependencies.
