@@ -17,11 +17,17 @@ The initial stage focuses on data integrity and standardization:
 * **Label Encoding:** Categorical attack labels are converted into numerical integers for algorithmic compatibility.
 
 ####  Feature Engineering Stage (`src/feature_engineering.py`)
-*Based on Information Gain analysis, this script refines the dataset for a Random Forest model:*
+Based on Information Gain analysis, this script refines the dataset for a Random Forest model:
 * **Host De-memorization:** Automatically drops identifier columns (`Flow ID`, `Source IP`, `Source Port`, etc.) to ensure the model learns attack patterns rather than specific host addresses.
 * **Strategic Selection:** Retains 9 high-impact features selected via **Information Gain analysis (Table B.4)** plus the target `Label`.
 * **Statistical Normalization:** Utilizes `StandardScaler` to ensure all features contribute equally to the model, regardless of their original scale (e.g., Duration vs. Packet Length).
 * **Optimized Export:** Produces a standardized CSV file ready for the modeling phase.
+
+#### Exploratory Data Analysis (\`notebooks/01_eda_overview.ipynb\`)
+Detailed investigation of the dataset's statistical properties:
+* **Class Distribution:** Visualizes the extreme imbalance between benign traffic ( > 80%) and various attack types, highlighting the need for specialized evaluation metrics.
+* **Feature Distribution:** Histogram analysis for the 9 selected cybersecurity features to understand their statistical range and spread.
+* **Correlation Analysis:** Features a heatmap identifying linear relationships between flow metrics to analyze feature dependencies.
 
 ---
 
@@ -53,11 +59,14 @@ python src/feature_engineering.py --input src/clean_cyber_data.csv --output proc
 
 ###  Repository Structure
 * **`src/`**: Contains Python scripts for cleaning and engineering.
+* **\`notebooks/\`**: Contains the **\`01_eda_overview.ipynb\`** notebook.
 * **`data/`**: Holds **sample dataset** subsets for input and verification.
-* **`report/`**: Contains the final PDF report with detailed project analysis.
+* **`report/`**: Contains the final PDF report and static EDA outputs (\`html\`, \`txt\`).
 * **\`requirements.txt\`**: Listing of all Python dependencies.
+* **Note on EDA Results:** Due to GitHub's private repository policy, the \`EDA_Notebook_Output.html\` cannot be previewed directly. Please **download** it and open it in a web browser.
 
 ---
 
-**Note:** Detailed justifications for feature selection and pre-processing techniques are documented in the final PDF report.
+**Note:** Detailed justifications for feature selection, pre-processing techniques and exploratory data analysis are documented in the final PDF report.
+
 
