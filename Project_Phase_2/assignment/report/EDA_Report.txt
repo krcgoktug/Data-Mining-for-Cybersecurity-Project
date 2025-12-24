@@ -1,0 +1,37 @@
+==========================
+EXPLORATORY DATA ANALYSIS
+==========================
+
+Dataset: CIC-IDS2017 (Cleaned Version)
+Total Samples: 2,827,876
+Total Features: 79
+
+--------------------------------------------------
+1. Class Distribution Analysis
+--------------------------------------------------
+
+(INSERT FIGURE 1 HERE)
+
+The dataset exhibits a highly imbalanced class distribution. As shown in Figure X, the majority of the traffic belongs to label 0 (Benign) with 2,271,320 samples, while several attack categories contain only a few thousand samples. For example, label 4 contains 230,124 samples, whereas some attack classes such as labels 11, 6, and 5 have fewer than 6,000 samples.
+
+This strong imbalance indicates that the dataset is dominated by normal traffic, which may bias machine learning models toward predicting the majority class. Therefore, model evaluation must carefully consider imbalance-aware metrics rather than relying solely on overall accuracy.
+
+--------------------------------------------------
+2. Feature Distribution Analysis
+--------------------------------------------------
+
+(INSERT FIGURE 2 HERE)
+
+Figure X illustrates the distributions of the selected nine features used in the modeling phase. Most features exhibit heavily right-skewed distributions, where a large proportion of samples are concentrated near zero, while a small number of observations take extremely high values. This behavior is particularly evident for features such as Flow Duration, Total Packet Counts, and Flow Bytes/s.
+
+Such skewness is common in network traffic data and reflects the presence of both short-lived benign flows and long-lasting or high-volume attack-related flows. The observed distributions justify the application of feature scaling and normalization techniques in the modeling stage, while emphasizing the importance of using the cleaned (non-scaled) data for exploratory analysis.
+
+--------------------------------------------------
+3. Correlation Analysis
+--------------------------------------------------
+
+(INSERT FIGURE 3 HERE)
+
+Correlation analysis was performed on the selected feature set to identify linear dependencies among features. The heatmap visualization reveals that certain packet-length-related features show moderate to strong positive correlations. This suggests potential redundancy among some variables and supports the feature selection strategy applied in the modeling phase.
+
+Understanding these relationships helps reduce multicollinearity effects and contributes to building more stable and interpretable machine learning models.

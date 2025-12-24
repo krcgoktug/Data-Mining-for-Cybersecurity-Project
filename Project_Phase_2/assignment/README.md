@@ -15,6 +15,7 @@ The initial stage focuses on data integrity and standardization:
 * **Structural Cleaning:** Strips hidden white spaces from column names to prevent indexing errors.
 * **Integrity Management:** Detects and removes missing (`NaN`) and infinite (`inf`) values—commonly caused by zero-division in flow calculations—to ensure mathematical stability.
 * **Label Encoding:** Categorical attack labels are converted into numerical integers for algorithmic compatibility.
+* **Cleaned Data:** https://drive.google.com/file/d/1b-vDPkMnmaVEVoMGjYCrqQdcSeEegC6F/view?usp=sharing
 
 ####  Feature Engineering Stage (`src/feature_engineering.py`)
 Based on Information Gain analysis, this script refines the dataset for a Random Forest model:
@@ -22,12 +23,15 @@ Based on Information Gain analysis, this script refines the dataset for a Random
 * **Strategic Selection:** Retains 9 high-impact features selected via **Information Gain analysis (Table B.4)** plus the target `Label`.
 * **Statistical Normalization:** Utilizes `StandardScaler` to ensure all features contribute equally to the model, regardless of their original scale (e.g., Duration vs. Packet Length).
 * **Optimized Export:** Produces a standardized CSV file ready for the modeling phase.
+* **Feature Engineered Data:** https://drive.google.com/file/d/1aiMiYLPZClOwJ13Yw9Hyh1hYHJ9yYado/view?usp=sharing
+
 
 #### Exploratory Data Analysis (\`notebooks/01_eda_overview.ipynb\`)
 Detailed investigation of the dataset's statistical properties:
 * **Class Distribution:** Visualizes the extreme imbalance between benign traffic ( > 80%) and various attack types, highlighting the need for specialized evaluation metrics.
 * **Feature Distribution:** Histogram analysis for the 9 selected cybersecurity features to understand their statistical range and spread.
 * **Correlation Analysis:** Features a heatmap identifying linear relationships between flow metrics to analyze feature dependencies.
+
 
 ---
 

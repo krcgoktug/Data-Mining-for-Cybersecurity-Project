@@ -1,0 +1,5 @@
+Class Distribution Analysis
+
+The dataset exhibits a highly imbalanced class distribution. As shown in Figure X, the majority of the traffic belongs to label 0 (Benign) with 2,271,320 samples, while several attack categories contain only a few thousand samples. For example, label 4 contains 230,124 samples, whereas some attack classes such as labels 11, 6, and 5 have fewer than 6,000 samples.
+
+This strong imbalance indicates that the dataset is dominated by normal traffic, which may bias machine learning models toward predicting the majority class. Therefore, model evaluation must carefully consider imbalance-aware metrics rather than relying solely on overall accuracy.
