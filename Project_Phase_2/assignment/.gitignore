@@ -1,15 +1,22 @@
-# Python Standard
+# Python cache
 __pycache__/
 *.pyc
+
+# Environment variables
 .env
+
+# Virtual environments
 .venv/
 venv/
+
+# Jupyter
+.ipynb_checkpoints/
 
 # Project Specific Data (Large Files)
 cleaned_data.csv
 processed_data.csv
 data/*.csv
-!data/sample_data.csv 
+!data/sample_data.csv
 
 # IDE & OS Specific
 .vscode/
@@ -17,7 +24,3 @@ data/*.csv
 .vs/
 .DS_Store
 Thumbs.db
-
-# Log & Temp Files
-*.log
-*.tmp
