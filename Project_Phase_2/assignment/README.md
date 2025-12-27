@@ -33,6 +33,17 @@ Detailed investigation of the dataset's statistical properties:
 * **Correlation Analysis:** Features a heatmap identifying linear relationships between flow metrics to analyze feature dependencies.
 
 
+##  IDS Model Prototype (Random Forest)
+This module implements a Random Forest classifier for the CIC-IDS2017 dataset to detect network intrusions.
+
+**Key Implementation Details:**
+* **Label Grouping:** Aggregated the original 15 labels into 6 broad categories (Benign, DoS, PortScan, Brute Force, Web Attack, Bot) to resolve low-support class issues.
+* **Imbalance Handling:** Utilized `class_weight='balanced'` to automatically adjust penalties for minority attack classes.
+
+**Results:**
+* **Overall Accuracy:** ~99%
+* **Strengths:** Near-perfect detection of volumetric attacks (DoS, PortScan).
+* **Limitations:** Lower detection rates for Web Attacks due to the lack of payload content analysis in flow-based features.
 ---
 
 ###  Execution & Usage Guide
