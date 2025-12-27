@@ -1,7 +1,23 @@
+# Python Standard
 __pycache__/
 *.pyc
 .env
 .venv/
 venv/
+
+# Project Specific Data (Large Files)
 cleaned_data.csv
 processed_data.csv
+data/*.csv
+!data/sample_data.csv 
+
+# IDE & OS Specific
+.vscode/
+.idea/
+.vs/
+.DS_Store
+Thumbs.db
+
+# Log & Temp Files
+*.log
+*.tmp
