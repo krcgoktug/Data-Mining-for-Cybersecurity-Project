@@ -100,8 +100,8 @@ python src/train_intrusion_detection.py
 * **`src/`**: Contains Python scripts.
 * **`notebooks/`**: Contains the **\`01_eda_overview.ipynb\`** notebook.
 * **`data/`**: Holds **sample dataset** subsets for input and verification.
-* **\`requirements.txt\`**: Listing of all Python dependencies.
-* **\`report/\`**:
+* **`requirements.txt/`**: Listing of all Python dependencies.
+* **`report/`**:
     * **\`GROUP18-PROJECT-PHASE2-REPORT.pdf\`**: **Primary Phase 2 Deliverable.**
     * **\`assets/\`**: Detailed evidence including Confusion Matrix, HTML outputs, and training logs.
 
