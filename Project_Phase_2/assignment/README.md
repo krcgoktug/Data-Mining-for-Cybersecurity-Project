@@ -102,10 +102,10 @@ python src/train_intrusion_detection.py
 * **`data/`**: Holds **sample dataset** subsets for input and verification.
 * **`requirements.txt/`**: Listing of all Python dependencies.
 * **`report/`**:
-    * **\`GROUP18-PROJECT-PHASE2-REPORT.pdf\`**: **Primary Phase 2 Deliverable.**
-    * **\`assets/\`**: Detailed evidence including Confusion Matrix, HTML outputs, and training logs.
+    * **`GROUP18-PROJECT-PHASE2-REPORT.pdf`**: **Primary Phase 2 Deliverable.**
+    * **`assets/`**: Detailed evidence including Confusion Matrix, HTML outputs, and training logs.
 
-> **Note on EDA Results:** Due to GitHub's private repository policy, the \`EDA_Notebook_Output.html\` cannot be previewed directly. Please **download** it and open it in a web browser.
+> **Note on EDA Results:** Due to GitHub's private repository policy, the `EDA_Notebook_Output.html` cannot be previewed directly. Please **download** it and open it in a web browser.
 
 ---
 
