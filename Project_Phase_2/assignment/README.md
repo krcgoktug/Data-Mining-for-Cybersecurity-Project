@@ -92,7 +92,7 @@ jupyter notebook notebooks/01_eda_overview.ipynb
 python src/train_intrusion_detection.py
 ```
 * **Input:** `processed_data.csv`.
-* **Output:** Detailed model performance metrics, including precision/recall for each attack family, can be found in \`report/Training_Outputs.txt\`.
+* **Output:** Detailed model performance metrics, including precision/recall for each attack family, can be found in `report/Training_Outputs.txt`.
 
 ---
 
