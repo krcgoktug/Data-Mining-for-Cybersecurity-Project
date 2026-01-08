@@ -83,7 +83,7 @@ python src/feature_engineering.py --input src/clean_cyber_data.csv --output proc
 jupyter notebook notebooks/01_eda_overview.ipynb
 ```
 * **Action:** Run all cells in the notebook to visualize data distributions and correlations.
-* **Input:** \`clean_cyber_data.csv\`
+* **Input:** `clean_cyber_data.csv`
 * **Insight:** Confirms class imbalance and justifies the choice of evaluation metrics.
 
 
@@ -91,7 +91,7 @@ jupyter notebook notebooks/01_eda_overview.ipynb
 ```bash
 python src/train_intrusion_detection.py
 ```
-* **Input:** \`processed_data.csv\`.
+* **Input:** `processed_data.csv`.
 * **Output:** Detailed model performance metrics, including precision/recall for each attack family, can be found in \`report/Training_Outputs.txt\`.
 
 ---
