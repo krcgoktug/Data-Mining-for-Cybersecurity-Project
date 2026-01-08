@@ -7,7 +7,7 @@ This folder contains the end-to-end implementation for **Phase 2: Data Pre-proce
 
 ##  Pipeline Architecture
 
-###  Data Preparation (\`src/create_sampledata.py\`)
+###  Data Preparation (`src/create_sampledata.py`)
 * **Stratified Sampling:** Generates a representative 20,000-row subset from the raw Wednesday dataset.
 * **Class Preservation:** Ensures that rare attack classes (e.g., DoS, Heartbleed) are proportionally represented to avoid model bias.
 * **Integrity:** Strips hidden spaces in raw CSV headers and handles missing labels.
