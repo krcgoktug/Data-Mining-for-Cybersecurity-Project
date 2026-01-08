@@ -98,7 +98,7 @@ python src/train_intrusion_detection.py
 
 ##  Repository Structure
 * **`src/`**: Contains Python scripts.
-* **`notebooks/`**: Contains the **\`01_eda_overview.ipynb\`** notebook.
+* **`notebooks/`**: Contains the **`01_eda_overview.ipynb`** notebook.
 * **`data/`**: Holds **sample dataset** subsets for input and verification.
 * **`requirements.txt/`**: Listing of all Python dependencies.
 * **`report/`**:
