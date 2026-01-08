@@ -1,0 +1,16 @@
+Grouping labels...
+Training Random Forest on Grouped Data...
+
+--- Evaluation Results (Grouped) ---
+              precision    recall  f1-score   support
+
+      Benign       1.00      0.99      1.00    454264
+         DoS       0.99      1.00      1.00     75948
+    PortScan       0.99      1.00      1.00     31761
+ Brute Force       0.97      1.00      0.98      2766
+  Web Attack       0.22      0.29      0.25       436
+         Bot       0.15      0.84      0.25       391
+
+    accuracy                           0.99    565566
+   macro avg       0.72      0.85      0.75    565566
+weighted avg       1.00      0.99      0.99    565566
