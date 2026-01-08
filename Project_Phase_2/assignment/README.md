@@ -7,6 +7,11 @@ This folder contains the end-to-end implementation for **Phase 2: Data Pre-proce
 
 ##  Pipeline Architecture
 
+###  Data Preparation (\`src/create_sampledata.py\`)
+* **Stratified Sampling:** Generates a representative 20,000-row subset from the raw Wednesday dataset.
+* **Class Preservation:** Ensures that rare attack classes (e.g., DoS, Heartbleed) are proportionally represented to avoid model bias.
+* **Integrity:** Strips hidden spaces in raw CSV headers and handles missing labels.
+
 ###  Data Cleaning Stage (`src/cyber_cleaner.py`)
 The initial stage focuses on data integrity and standardization:
 * **Dataset Ingestion:** Merges daily CSV files (Monday through Friday) to capture comprehensive weekly traffic patterns.
@@ -51,20 +56,29 @@ pip install -r requirements.txt
 ###  Running the Pipeline
 The scripts must be executed in order to maintain the data flow:
 
-**Step A: Clean the Raw Data**
+**Step 0: Initialize Representative Sample**
+```bash
+python src/create_sampledata.py
+```
+* **Action:** Performs stratified sampling on the raw Wednesday dataset.
+* **Input:** Raw `Wednesday-workingHours.pcap_ISCX.csv`.
+* **Output:** `data/sample_data.csv` (A representative 20,000-row subset).
+* **Rationale:** Ensures that the cleaning and modeling pipeline starts with a dataset that preserves original attack proportions.
+
+**Step 1: Clean the Raw Data**
 ```bash
 python src/cyber_cleaner.py
 ```
 * **Input:** Raw CSV files in the directory.
 * **Output:** `clean_cyber_data.csv`
 
-**Step B: Apply Feature Engineering**
+**Step 2: Apply Feature Engineering**
 ```bash
 python src/feature_engineering.py --input src/clean_cyber_data.csv --output processed_data.csv
 ```
 * **Arguments:** Use `--input` to specify the cleaned file and `--output` for the final processed path.
 
-**Step C: Exploratory Data Analysis (EDA)**
+**Step 3: Exploratory Data Analysis (EDA)**
 ```bash
 jupyter notebook notebooks/01_eda_overview.ipynb
 ```
@@ -73,7 +87,7 @@ jupyter notebook notebooks/01_eda_overview.ipynb
 * **Insight:** Confirms class imbalance and justifies the choice of evaluation metrics.
 
 
-**Step D: Train and Evaluate Model**
+**Step 4: Train and Evaluate Model**
 ```bash
 python src/train_intrusion_detection.py
 ```
@@ -83,7 +97,7 @@ python src/train_intrusion_detection.py
 ---
 
 ##  Repository Structure
-* **`src/`**: Contains Python scripts for cleaning and engineering.
+* **`src/`**: Contains Python scripts.
 * **`notebooks/`**: Contains the **\`01_eda_overview.ipynb\`** notebook.
 * **`data/`**: Holds **sample dataset** subsets for input and verification.
 * **\`requirements.txt\`**: Listing of all Python dependencies.
