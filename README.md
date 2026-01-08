@@ -16,7 +16,7 @@ To view the technical implementation and results for each stage, please visit th
 1.  **[Phase 1: Dataset Selection, Literature Survey](./Project%20Phase%201/assignment/)**
 2.  **[Phase 2: Pre-processing, EDA, Applying Technique](./Project_Phase_2/assignment/)** 
   
-## Group Members
+## Group-18 Members
 230304005 Sıla Özgel  
 220304044 Miray Pınarbaşı  
 230304010 Umut Topatan  
